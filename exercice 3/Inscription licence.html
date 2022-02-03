@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        h1{
+            font-weight: bold;
+            text-align: center;
+        }
+        legend{
+            border: none;
+            text-align: center;
+        }
+        fieldset{
+            border: 2px solid black;
+            text-align: center;
+        }
+         #adresse{
+            width: 300px;
+            height: 100px;
+         }
+         #buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+         }
+         legend{
+             font-size: 20px;
+         }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Inscription en Licence</h1>
+    </header>
+    <form action="C:\Users\21650\Desktop\atelier html\exercice 3\whatever.html" autocomplete="on">
+    <section>
+    <fieldset>
+        <legend> informations personnelles :</legend>
+        <br>
+        <label for="name">Votre Nom :</label> 
+        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" placeholder="Votre Nom ?"> <br> <br>
+        <label for="prenom">Votre prenom :</label>
+        <input type="text" id="prenom" name="prenom" required minlength="4" maxlength="8" size="10" placeholder="Votre Prenom ?"> <br> <br>
+        <label for="Age" >Votre Age :</label>
+        <input type="number" id="Age" name="Age" required placeholder="Age?" size="10" > <br> <br>
+        <label for="Adresse">Votre Adress :</label>
+        <input type="text" id="adresse" name="adresse" required placeholder="Votre Adresse ?"> <br> <br>
+        <label for="pwd">Votre password :</label>
+        <input type="password" id="pwd" name="pwd" required placeholder="Votre Password ?"> <br> <br>
+        <label for="pwd2">Retapez votre mot de passe :</label>
+        <input type="password" id="pwd2" name="pwd2" required placeholder="Votre Password"> <br> <br>
+        <label for="mail">Votre E-mail</label>
+        <input type="email" id="mail" name="mail" required placeholder="Votre E-mail"> <br> <br>
+        <label for="site">Votre Url :</label> 
+        <input type="url" id="site" name="site" placeholder="Votre Url"> <br> <br>
+        <label for="date">Votre date de naissance :</label>
+        <input type="date" id="date" name="date" required placeholder="Votre date de naissance ?"> <br> <br>
+        <label for="test"> Code de vérification :</label>
+        <input type="text" id="test" name="test" required placeholder="tapez un code de verification" pattern="[I][N][S][A][T][0-9]{4}"> <br> <br>
+    </fieldset>
+    </section>
+    <br> <br> <br>
+    <section>
+        <fieldset>
+            <legend>Gestion des groupes et des options</legend>
+            Votre Groupe :    
+            <input type="radio" id="Groupe 1" name="Groupe" value="Groupe 1" checked >
+            <label for="Groupe 1">Groupe 1</label>
+            <input type="radio" id="Groupe 2" name="Groupe" value="Groupe 2">
+            <label for="Groupe 2">Groupe 2</label>
+            <input type="radio" id="Groupe 3" name="Groupe" value="Groupe 3">
+            <label for="Groupe 3">Groupe 3</label> <br> <br>
+            <label for="numero">Votre numero de carte etudiant :</label>
+            <input type="numero" id="numero" name="numero" required placeholder="Numero de carte ?"> <br> <br>
+            choisissez l'option que vous desirez :
+            <input list="options">
+            <datalist id="options">
+                <option value="Android">Android</option>
+                <option value="React">React</option>
+                <option value="Web">Web</option>
+                <option value="NET">Net</option>
+            </datalist>
+        </fieldset>
+    </section>
+<br> 
+<div id="buttons">
+    <input type="submit" value="submit" >
+    <input type="reset" value="rénitialiser" onclick >
+</div>
+</form>
+</body>
+</html>

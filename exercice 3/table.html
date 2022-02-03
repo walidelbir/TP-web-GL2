@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+ <style>
+  
+    table,td,th{
+        border: black solid 1px;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    table{
+        width: 60%;
+        height: 200px;
+    }
+    #table{
+          width: 100%;
+    }
+    
+ </style>
+    <title>Table</title>
+</head>
+
+
+<body>
+  <table>
+    <tr>
+        <th rowspan="2" style="width: 30%;">Population</th>
+        <th colspan="3" style="width: 70%;" >Moyenne</th>
+    </tr>
+    <tr>
+        <td style="width:32%">Hauteur en cm</td>
+        <td style="width: 32%;">Esperance de vie</td>
+        <td style="width: 32%;" >Poids</td>
+    </tr>
+    <tr>
+        <td style="border: 0px;" rowspan="2">
+            <table id="table">
+                <tr>
+                    <td rowspan="2">Sexe</td>
+                    <td>Masculin</td>
+                </tr>
+                <tr>
+                    <td>Feminin</td>
+                </tr>
+            </table>
+        </td>
+        <td>1.78</td>
+        <td>70</td>
+        <td>75kg</td>
+    </tr>
+    <tr>
+        <td>1.70</td>
+        <td>80</td>
+        <td>65kg</td>
+    </tr>
+  </table>
+    
+</body>
+</html>
